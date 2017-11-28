@@ -100,6 +100,7 @@ function checkValidServiceWorker(swUrl) {
 }
 
 export function unregister() {
+  console.log("unregister service worker called...");
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.ready.then(registration => {
       registration.unregister();
